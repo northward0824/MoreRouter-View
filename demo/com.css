@@ -1,0 +1,84 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+#el{
+    width: 100%;
+    height:100%;
+}
+main{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid #2b542c;
+    padding: 0 10px;
+}
+h2{
+    line-height: 60px;
+    color: #2b542c;
+    float: left;
+}
+nav ul{
+    width: auto;
+    height: 100%;
+    float: right;
+}
+nav li{
+    padding: 0 10px;
+    font-size: 14px;
+    color: #255625;
+    float: left;
+    height: 100%;
+    line-height: 60px;
+    font-weight: bold;
+}
+nav li a{
+    color: #255625;
+}
+.left{
+    width: 300px;
+    height: calc(100% - 60px);
+    position: absolute;
+    top:60px;
+    left: 0;
+    border-right: 2px solid #3e8f3e;
+    padding-left: 10px;
+}
+.left div>ul>li>a{
+    color: #3c763d;
+    font-size: 15px;
+    font-weight: bold;
+}
+.left li a{
+    display: block;
+    font-size: 16px;
+    color: #3a3e40;
+    height: 100%;
+    line-height: 30px;
+
+    /*font-weight: bold;*/
+}
+a{
+    text-decoration:none;
+
+}
+.right{
+    /*width: 85%;*/
+    height: calc(100% - 60px);
+    background: white;
+    position: relative;
+    margin-left: 300px;
+    overflow: scroll;
+    padding-left: 20px;
+}

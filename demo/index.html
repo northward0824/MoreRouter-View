@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="vue.js"></script>
+    <script src="vue-router.js"></script>
+    <link rel="stylesheet" href="com.css">
+    <link rel="stylesheet" href="mark.css">
+    <script src="https://cdn.jsdelivr.net/npm/tween.js@16.3.4"></script>
+    <link rel="stylesheet" href="https://hinesboy.github.io/mavonEditor/dist/markdown/github-markdown.min.css">
+    <style>
+        .v-enter{
+            transform: translateX(-100%);
+        }
+        .v-enter-active{
+            transition: all 1s ease;
+        }
+        .v-enter-to{
+            transform: translateX(0);
+        }
+        .v-leave{
+            transform: translateX(0);
+        }
+        .v-leave-active{
+            transition: all 1s ease;
+        }
+        .v-leave-to{
+            transform: translateX(-100%);
+        }
+    </style>
+</head>
+<body>
+    <div id="el">
+        <nav>
+            <h2>MyVue</h2>
+            <ul>
+                <li>
+                    <router-link to="/">列表一</router-link>
+                </li>
+                <li>
+                    <router-link to="/twoQuick">列表二</router-link>
+                </li>
+
+            </ul>
+        </nav>
+        <transition>
+        <router-view></router-view>
+        </transition>
+    </div>
+    <script src="component.js"></script>
+    <script src="routers.js"></script>
+
+    <script>
+        new Vue({
+            el:"#el",
+            router,
+        })
+    </script>
+
+</body>
+</html>
